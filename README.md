@@ -4,7 +4,7 @@
 ### run command
 docker run -d  \
 --restart unless-stopped \
---name boomalien-tvheadend \
+--name tvheadend \
 --device /dev/dri:/dev/dri \
 --device /dev/dvb:/dev/dvb \
 --device=/dev/bus/usb \
@@ -15,4 +15,4 @@ docker run -d  \
 -v /smartHome/applications/tvheadend/recordings:/recordings:rw \
 -v /smartHome/applications/tvheadend/picons:/picons \
 -v /etc/localtime:/etc/localtime:ro \
-0ae14864aacc
+boomalien/docker-tvheadend-sundtek
